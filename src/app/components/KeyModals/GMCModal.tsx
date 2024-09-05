@@ -61,7 +61,7 @@ export const GmcMapModal: React.FC<IGmcMapModalProps> = ({
       </div>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-[25px] mb-4">
-          Please enter your GMC Map Credentails below:
+          Please enter your GMC Credentails below:
         </h1>
         <GmcMapKeyInput
           token={paramID}
