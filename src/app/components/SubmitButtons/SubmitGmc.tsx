@@ -23,9 +23,8 @@ export function SubmitGMCButton({
   const { activeAddress } = useWallet();
 
   const isValidAppKey = /^[0-9]{11}$/i.test(paramID);
-  const isValidMiner = /^([A-Z]{2,6})-[A-Z0-9]{33}$/i.test(minerKey);
+  const isValidMiner = /^([A-Z]{2,6})-[A-Z0-9]{31,33}$/i.test(minerKey);
   const isValidKeys = isValidAppKey && isValidMiner;
-  console.log({isValidAppKey, isValidMiner})
 
   const handleGmcSubmit = async (
     
